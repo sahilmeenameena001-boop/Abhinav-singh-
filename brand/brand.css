@@ -1,0 +1,605 @@
+/* Generated from site.config.json. */
+:root {
+  --sar-color-primary: #c0a571;
+  --sar-color-accent: #2d4050;
+  --sar-color-text: #2d4050;
+  --sar-color-background: #f6f4ef;
+  --sar-color-color-1: #f5f0e61a;
+  --sar-color-color-2: #f5f0e60f;
+  --sar-color-color-3: #f5f0e699;
+  --sar-color-color-4: #f5f0e6;
+  --sar-color-color-5: #2d405014;
+  --sar-color-color-6: #2d4050;
+  --sar-color-color-7: #2d405000;
+  --sar-color-color-8: #c0a57140;
+  --sar-color-color-9: #f5f0e633;
+  --sar-color-color-10: #f5f0e612;
+  --sar-color-color-11: #c0a5711a;
+  --sar-color-color-12: #c0a57133;
+  --sar-color-auto-000000: #2d4050;
+  --sar-color-auto-0b0b0b: #2d4050;
+  --sar-color-auto-101828: #2d4050;
+  --sar-color-auto-2c1a1d: #17243b;
+  --sar-color-auto-333333: #2d4050;
+  --sar-color-auto-353a3c: #2d4050;
+  --sar-color-auto-444444: #2d4050;
+  --sar-color-auto-4d4d4d: #5b6972;
+  --sar-color-auto-555555: #5b6972;
+  --sar-color-auto-666666: #5b6972;
+  --sar-color-auto-6d2c34: #2d4050;
+  --sar-color-auto-777777: #5b6972;
+  --sar-color-auto-8a2535: #2d4050;
+  --sar-color-auto-aaaaaa: #5b6972;
+  --sar-color-auto-b18d59: #c0a571;
+  --sar-color-auto-c9a46b: #c0a571;
+  --sar-color-auto-d8c6a4: #c6b296;
+  --sar-color-auto-e5e7eb: #f6f4ef;
+  --sar-color-auto-f0ebe0: #f6f4ef;
+  --sar-color-auto-f0ebe3: #f6f4ef;
+  --sar-color-auto-f5f0e8: #f6f4ef;
+  --sar-color-auto-f5f2ec: #f6f4ef;
+  --sar-color-auto-faf7f2: #f5f0e6;
+  --sar-color-auto-ff6568: #c6b296;
+  --sar-color-auto-fff7eb: #f5f0e6;
+  --sar-font-body: Inter, sans-serif;
+  --sar-font-heading: DM Serif Display, serif;
+  --sar-font-font-1: Inter, sans-serif;
+  --sar-font-font-2: Inter, sans-serif;
+  --sar-font-font-3: var(--default-font-family,ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+  --sar-font-font-4: Inter, sans-serif;
+}
+
+/* Editorial rise
+MIT License
+Copyright (c) 2026 SCL Studio
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+@keyframes chambers-editorial-rise {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+    animation-timing-function: cubic-bezier(0.16,1,0.3,1);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.chambers-logo {
+  position: relative;
+  display: block;
+  width: clamp(110px, 12vw, 138px);
+  aspect-ratio: 510 / 320;
+  mix-blend-mode: screen;
+}
+
+.chambers-logo img {
+  position: absolute;
+  max-width: none;
+  width: 232.94%;
+  height: auto;
+  left: -67.06%;
+  top: -65.31%;
+  /* Keep the crest and wordmark, excluding the rules alongside the middle line. */
+  clip-path: polygon(28.8% 27.8%, 71.5% 27.8%, 71.5% 57.9%, 61.3% 57.9%,
+    61.3% 63.6%, 71.5% 63.6%, 71.5% 70.2%, 28.8% 70.2%, 28.8% 63.6%,
+    38.7% 63.6%, 38.7% 57.9%, 28.8% 57.9%);
+  filter: grayscale(1) invert(1) contrast(1.65) sepia(.23);
+}
+
+#hero.chambers-hero {
+  height: auto;
+}
+
+.chambers-hero .chambers-hero-stage {
+  height: auto;
+  min-height: clamp(32rem, 75svh, 53rem);
+  isolation: isolate;
+}
+
+.chambers-hero-art {
+  position: absolute;
+  inset: 1rem 0 0 auto;
+  width: min(35%, 37rem);
+  pointer-events: none;
+}
+
+.chambers-hero-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: right bottom;
+}
+
+.chambers-hero .chambers-hero-content {
+  height: auto;
+  padding-block: clamp(2.5rem, 6vw, 6rem);
+}
+
+
+.chambers-photo-layout,
+.chambers-team-layout {
+  display: grid;
+  width: 100%;
+  max-width: 78rem;
+  margin-inline: auto;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: center;
+}
+
+.chambers-photo-frame {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.chambers-work-frame {
+  aspect-ratio: 16 / 9;
+}
+
+.chambers-portrait-frame {
+  aspect-ratio: 1;
+}
+
+.chambers-speaking-frame {
+  aspect-ratio: 4 / 5;
+}
+
+.chambers-work-photo {
+  filter: brightness(1.17) contrast(1.06);
+  object-position: center;
+}
+
+.chambers-speaking-photo {
+  filter: brightness(1.08) contrast(1.04) saturate(.93);
+  object-position: center 42%;
+}
+
+.chambers-team-photo {
+  filter: brightness(1.09) contrast(1.05);
+  object-position: center 34%;
+}
+
+.chambers-hero-art img {
+  filter: brightness(1.06) contrast(1.05);
+}
+
+
+
+@media (min-width: 768px) {
+  .chambers-work-layout,
+  .chambers-speaking-layout {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  }
+
+  .chambers-team-layout {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .chambers-hero .chambers-hero-content {
+    display: grid;
+    grid-template-columns: minmax(0, min(33%, 30rem)) minmax(0, 1fr);
+    max-width: min(100%, 98rem);
+    justify-content: start;
+    column-gap: clamp(1.25rem, 3vw, 3.5rem);
+  }
+
+  .chambers-hero-values {
+    display: flex;
+    width: max-content;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .chambers-hero .chambers-hero-copy {
+    max-width: min(60%, 30rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .chambers-hero .chambers-hero-stage {
+    min-height: 0;
+  }
+
+  .chambers-hero .chambers-hero-content {
+    justify-content: flex-start;
+    padding-block: 2.75rem clamp(12rem, 55vw, 19rem);
+  }
+
+  .chambers-hero .chambers-hero-copy {
+    max-width: 28rem;
+  }
+
+  .chambers-hero-art {
+    inset: auto 0 0 auto;
+    height: clamp(12rem, 53vw, 19rem);
+    width: 75%;
+  }
+
+  .chambers-speaking-layout > div:first-child {
+    order: 1;
+  }
+
+  .chambers-speaking-frame {
+    aspect-ratio: 4 / 4.5;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .chambers-hero-art {
+    animation: chambers-editorial-rise 1s both;
+  }
+}
+
+.chambers-hero-copy {
+  width: 100%;
+  min-width: 0;
+  max-width: 30rem;
+}
+
+.chambers-hero-copy h1 {
+  font-size: clamp(2.15rem, 4.5vw, 3.85rem);
+  overflow-wrap: anywhere;
+}
+
+.chambers-team-figure {
+  width: 100%;
+  max-width: 28rem;
+  margin: 0;
+}
+
+.chambers-team-figure figcaption {
+  margin-top: 1rem;
+}
+
+.chambers-team-copy {
+  display: grid;
+  min-width: 0;
+  gap: 1rem;
+  max-width: 36rem;
+}
+
+.chambers-practice-grid {
+  display: grid;
+  gap: 1px;
+}
+
+.chambers-practice-card {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+  min-width: 0;
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  border: 1px solid var(--sar-color-color-1);
+  border-inline-start: 3px solid var(--sar-color-primary);
+  background: var(--sar-color-color-2);
+  color: var(--sar-color-color-4);
+}
+
+.chambers-practice-card h3 {
+  font-family: var(--sar-font-heading);
+  font-size: clamp(1.35rem, 2vw, 1.65rem);
+  line-height: 1.2;
+}
+
+.chambers-practice-card p,
+.chambers-practice-card ul {
+  color: var(--sar-color-color-4);
+  opacity: .86;
+}
+
+.chambers-practice-card ul {
+  font-size: .875rem;
+}
+
+.chambers-disclosure-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.chambers-disclosure-summary::-webkit-details-marker {
+  display: none;
+}
+
+.chambers-disclosure-summary:focus-visible {
+  outline: 2px solid var(--sar-color-primary);
+  outline-offset: -3px;
+}
+
+.chambers-disclosure-icon {
+  display: grid;
+  flex: 0 0 2rem;
+  height: 2rem;
+  place-items: center;
+  border: 1px solid var(--sar-color-color-5);
+  color: var(--sar-color-accent);
+  font-size: 1.125rem;
+  line-height: 1;
+}
+
+.chambers-disclosure-icon::before {
+  content: '+';
+}
+
+.chambers-disclosure[open] .chambers-disclosure-icon {
+  background: var(--sar-color-accent);
+  color: var(--sar-color-color-4);
+}
+
+.chambers-disclosure[open] .chambers-disclosure-icon::before {
+  content: '−';
+}
+
+.chambers-accordion-description {
+  padding: 0 clamp(1rem, 5vw, 5rem) 2rem;
+  color: var(--sar-color-text);
+}
+
+@media (min-width: 768px) {
+  .chambers-practice-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .chambers-practice-card {
+    grid-row: span 3;
+    grid-template-rows: subgrid;
+  }
+}
+
+@media (max-width: 767px) {
+  .chambers-team-figure {
+    max-width: 23rem;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .chambers-team-copy.is-revealed {
+    animation: chambers-editorial-rise 1s both;
+  }
+}
+
+
+
+
+.chambers-hero-copy h1,
+.chambers-hero-copy p,
+.chambers-hero-values .value-pill span {
+  color: var(--sar-color-accent);
+}
+
+.chambers-hero-copy a[href="#contact"] {
+  background: var(--sar-color-accent);
+  color: var(--sar-color-color-4);
+}
+
+.chambers-hero-copy a[href="#contact"]:hover {
+  background: var(--sar-color-auto-2c1a1d);
+}
+
+.chambers-hero-copy p {
+  font-size: clamp(.875rem, 1.25vw, 1rem);
+  line-height: 1.55;
+}
+
+.chambers-hero-values .value-pill > div {
+  border-color: var(--sar-color-accent);
+  opacity: .45;
+}
+
+.chambers-section-link {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.chambers-section-link a {
+  color: var(--sar-color-accent);
+  text-decoration: underline;
+  text-underline-offset: .25em;
+}
+
+.chambers-detail-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  padding: 1rem max(1.25rem, calc((100vw - 76rem) / 2));
+  background: var(--sar-color-accent);
+  color: var(--sar-color-color-4);
+}
+
+.chambers-detail-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem 1.5rem;
+}
+
+.chambers-detail-header [aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: .25em;
+}
+
+.chambers-detail-main {
+  width: min(100%, 76rem);
+  margin-inline: auto;
+  padding: clamp(2rem, 6vw, 5rem) 1.25rem;
+}
+
+@media (min-width: 1200px) {
+  .chambers-hero .chambers-hero-content {
+    grid-template-columns: minmax(0, min(33%, 30rem)) minmax(0, 13rem);
+  }
+
+  .chambers-hero-values .value-pill > span {
+    font-size: clamp(1.15rem, 1.8vw, 1.6rem);
+  }
+}
+
+
+
+#faqs {
+  border-block: 1px solid var(--sar-color-color-8);
+  background: var(--sar-color-background);
+}
+
+.chambers-detail-page {
+  min-height: 100vh;
+  background: var(--sar-color-background);
+}
+
+/* Match the original 64%-wide, 820px-capped widescreen placeholder. */
+.chambers-hero .chambers-hero-stage {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.chambers-hero .chambers-hero-content {
+  box-sizing: border-box;
+  justify-content: flex-start;
+  width: min(64%, 820px);
+  aspect-ratio: 16 / 9;
+  background: var(--sar-color-primary);
+  padding: clamp(1.25rem, 3vw, 3rem);
+}
+
+.chambers-hero .chambers-hero-copy {
+  max-width: 31rem;
+  gap: clamp(.8rem, 1.5vw, 1.5rem);
+}
+
+.chambers-hero .chambers-hero-copy > div:first-child {
+  gap: clamp(.5rem, 1vw, 1rem);
+}
+
+.chambers-hero-copy h1 {
+  font-size: clamp(2rem, 3.65vw, 3.5rem);
+}
+
+@media (min-width: 1200px) {
+  .chambers-hero .chambers-hero-content {
+    grid-template-columns: minmax(0, 1fr) max-content;
+    column-gap: clamp(1rem, 2vw, 2rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .chambers-hero .chambers-hero-stage {
+    padding: 1rem 1rem calc(clamp(12rem, 53vw, 19rem) + 1rem);
+  }
+
+  .chambers-hero .chambers-hero-content {
+    width: 100%;
+    aspect-ratio: auto;
+  }
+}
+
+.chambers-phone-menu {
+  display: none;
+}
+
+.chambers-phone .chambers-phone-menu {
+  display: block;
+}
+
+.chambers-phone .chambers-desktop-nav,
+.chambers-phone .chambers-existing-menu,
+.chambers-phone .chambers-hero-art,
+.chambers-phone .chambers-hero-values {
+  display: none;
+}
+
+.chambers-phone-menu summary {
+  display: grid;
+  place-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.chambers-phone-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.chambers-phone-menu summary span {
+  width: 23px;
+  height: 2px;
+  background: var(--sar-color-color-4);
+}
+
+.chambers-phone-menu nav {
+  position: absolute;
+  z-index: 1;
+  inset: 100% 0 auto;
+  display: grid;
+  max-height: 65dvh;
+  overflow: auto;
+  padding: .5rem 1.25rem 1rem;
+  background: var(--sar-color-accent);
+  color: var(--sar-color-color-4);
+}
+
+.chambers-phone-menu nav a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding-inline: .5rem;
+  border-bottom: 1px solid var(--sar-color-color-1);
+}
+
+.chambers-phone-menu :is(summary, a):focus-visible {
+  outline: 2px solid var(--sar-color-primary);
+  outline-offset: -2px;
+}
+
+.chambers-phone #hero .chambers-hero-stage {
+  min-height: 0;
+  padding: 1rem;
+}
+
+.chambers-phone #hero .chambers-hero-content {
+  display: flex;
+  width: 100%;
+  aspect-ratio: auto;
+}
+
+.chambers-phone #hero .chambers-hero-copy {
+  max-width: min(100%, 31rem);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html.chambers-phone {
+    scroll-behavior: smooth;
+  }
+}
+
+.chambers-phone-menu:not([open]) nav {
+  display: none;
+}
