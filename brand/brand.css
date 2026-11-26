@@ -486,7 +486,7 @@ SOFTWARE.
   }
 
   .chambers-hero-values .value-pill > span {
-    font-size: clamp(1.15rem, 1.8vw, 1.6rem);
+    font-size: calc(clamp(1.15rem, 1.8vw, 1.6rem) - 2pt);
   }
 }
 
