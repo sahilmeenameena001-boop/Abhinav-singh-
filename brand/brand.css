@@ -706,3 +706,15 @@ main > section h2,
     white-space: nowrap;
   }
 }
+
+/* Separate section labels, titles, and introductory copy. */
+main > section p:has(+ h2),
+.chambers-detail-main p:has(+ h1) {
+  margin-block-end: clamp(.375rem, 1vw, .75rem);
+  text-transform: uppercase;
+}
+
+main > section h2 + p,
+.chambers-detail-main h1 + p {
+  margin-block-start: clamp(.375rem, 1vw, .75rem);
+}
