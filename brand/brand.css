@@ -718,3 +718,23 @@ main > section h2 + p,
 .chambers-detail-main h1 + p {
   margin-block-start: clamp(.375rem, 1vw, .75rem);
 }
+
+.chambers-practice-title-wrap {
+  min-width: 0;
+  container-type: inline-size;
+}
+
+#services .chambers-practice-title-wrap h2 {
+  font-size: clamp(1rem, 6.5cqi, 3.25rem);
+}
+
+.chambers-practice-title-line {
+  display: block;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .chambers-practice-title-wrap {
+    flex: 1 1 60%;
+  }
+}
