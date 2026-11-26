@@ -109,6 +109,17 @@ SOFTWARE.
   height: auto;
 }
 
+@media (min-width: 768px) {
+  html:not(.chambers-phone) #hero.chambers-hero {
+    min-height: 100vh;
+    min-height: 100svh;
+  }
+
+  html:not(.chambers-phone) #hero .chambers-hero-stage {
+    flex-grow: 1;
+  }
+}
+
 .chambers-hero .chambers-hero-stage {
   height: auto;
   min-height: clamp(32rem, 75svh, 53rem);
