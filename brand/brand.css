@@ -508,12 +508,17 @@ SOFTWARE.
 }
 
 .chambers-hero .chambers-hero-copy {
+  --hero-copy-gap: clamp(.8rem, 1.5vw, 1.5rem);
   max-width: 31rem;
-  gap: clamp(.8rem, 1.5vw, 1.5rem);
+  gap: var(--hero-copy-gap);
 }
 
 .chambers-hero .chambers-hero-copy > div:first-child {
-  gap: clamp(.5rem, 1vw, 1rem);
+  gap: var(--hero-copy-gap);
+}
+
+.chambers-hero .chambers-hero-copy > div:last-child {
+  display: flex;
 }
 
 .chambers-hero-copy h1 {
