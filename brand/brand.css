@@ -311,7 +311,19 @@ SOFTWARE.
 }
 
 .chambers-practice-card ul {
+  padding-inline-start: 1.2em;
+  list-style: disc outside;
   font-size: .875rem;
+}
+
+.chambers-practice-card li::marker {
+  color: var(--sar-color-primary);
+}
+
+@media (min-width: 640px) {
+  .chambers-approach-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .chambers-disclosure-summary {
@@ -367,8 +379,15 @@ SOFTWARE.
   }
 
   .chambers-practice-card {
+    grid-row: span 5;
+    grid-template-rows: subgrid;
+  }
+
+  .chambers-practice-card ul {
+    display: grid;
     grid-row: span 3;
     grid-template-rows: subgrid;
+    row-gap: .25rem;
   }
 }
 
