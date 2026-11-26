@@ -89,7 +89,6 @@ SOFTWARE.
   display: block;
   width: clamp(110px, 12vw, 138px);
   aspect-ratio: 510 / 320;
-  mix-blend-mode: screen;
 }
 
 .chambers-logo img {
@@ -103,7 +102,7 @@ SOFTWARE.
   clip-path: polygon(28.8% 27.8%, 71.5% 27.8%, 71.5% 57.9%, 61.3% 57.9%,
     61.3% 63.6%, 71.5% 63.6%, 71.5% 70.2%, 28.8% 70.2%, 28.8% 63.6%,
     38.7% 63.6%, 38.7% 57.9%, 28.8% 57.9%);
-  filter: grayscale(1) invert(1) contrast(1.65) sepia(.23);
+  filter: url(#chambers-logo-ink);
 }
 
 #hero.chambers-hero {
@@ -666,7 +665,6 @@ main > section h2,
   overflow-wrap: anywhere;
 }
 
-.chambers-work-layout > div:first-child,
 .chambers-team-copy {
   gap: clamp(1.25rem, 3vw, 2rem);
 }
@@ -742,4 +740,21 @@ main > section h2 + p,
   .chambers-practice-title-wrap {
     flex: 1 1 60%;
   }
+}
+
+
+.chambers-work-layout {
+  align-items: start;
+  row-gap: clamp(1.25rem, 3vw, 2rem);
+}
+
+.chambers-work-layout > .chambers-work-title {
+  grid-column: 1 / -1;
+  font-size: clamp(1.55rem, 3.15vw, 2.75rem);
+  line-height: 1.18;
+}
+
+.chambers-work-title span {
+  display: inline-block;
+  max-width: 100%;
 }
